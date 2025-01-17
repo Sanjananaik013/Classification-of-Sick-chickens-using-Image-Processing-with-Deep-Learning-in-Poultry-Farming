@@ -143,3 +143,5 @@ Incorporate cloud storage for large-scale datasets.
 
 This project showcases the powerful intersection of machine learning and practical applications for the agricultural sector. 🐓
 
+Note:The file "Classification of sick chickens using IP and DL.ipynb" contains a bit different method involving no interface design and which is separate from the actual project.
+
