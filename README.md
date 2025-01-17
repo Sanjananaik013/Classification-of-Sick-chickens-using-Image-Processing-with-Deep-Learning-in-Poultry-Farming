@@ -8,6 +8,8 @@ This project presents a state-of-the-art GUI-based application that uses deep le
 
 📦 Dependencies
 
+📚 Training Process
+
 🚀 Usage
 
 ✨ Features
@@ -37,6 +39,49 @@ matplotlib: Data visualization.
 Install dependencies with:
 
 pip install numpy pillow tensorflow scikit-learn matplotlib
+
+📚 Training Process
+
+Data Preparation:
+
+The dataset is organized into training and validation sets using the ImageDataGenerator class for preprocessing:
+
+Training set: 80% of the data
+
+Validation set: 20% of the data
+
+Training Workflow:
+
+Base Model:
+The InceptionV3 model is used as a feature extractor with pre-trained weights from ImageNet.
+
+Feature Extraction:
+
+Extracted features from both the training and validation datasets using the base model.
+
+Flattened the extracted features for use in the classifier.
+
+Classifier:
+
+A fully connected neural network with the following architecture:
+
+Dense layer with 1024 units and ReLU activation.
+
+Dropout layer with a 50% rate to reduce overfitting.
+
+Output layer with a single unit and sigmoid activation.
+
+Training:
+
+The model was trained for 50 epochs using the Adam optimizer and binary cross-entropy loss.
+
+Validation accuracy and loss were monitored during training.
+
+Model Saving:
+
+The trained model was saved to:
+
+C:/Users/sanja/OneDrive/Desktop/poultry/path_to_save_model/inceptionv310.h5
 
 🚀 Usage
 
